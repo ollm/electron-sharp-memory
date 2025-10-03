@@ -51,4 +51,9 @@ function stop()
 	interval = false;
 }
 
-setTimeout(memory, 500);
+setTimeout(function(){
+
+	memory();
+	document.querySelector('.versions').innerHTML = `Electron v${process.versions.electron}<br>Sharp v${sharp.versions.sharp}`;
+
+}, 500);
