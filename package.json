@@ -1,0 +1,17 @@
+{
+  "name": "electron-sharp-memory",
+  "version": "1.0.0",
+  "main": "www/js/main.js",
+  "scripts": {
+    "start": "electron www/js/main.js --no-sandbox --js-flags=\"--expose-gc\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^38.2.0"
+  },
+  "dependencies": {
+    "sharp": "^0.34.4"
+  }
+}
