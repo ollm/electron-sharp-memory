@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "www/js/main.js",
   "scripts": {
-    "start": "electron www/js/main.js --no-sandbox --js-flags=\"--expose-gc\""
+    "start": "electron www/js/main.js --no-sandbox --js-flags=\"--expose-gc --max-old-space-size=256 --max-semi-space-size=256\""
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "electron": "^38.2.0"
+    "electron": "^38.2.1"
   },
   "dependencies": {
     "sharp": "^0.34.4"
